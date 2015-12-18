@@ -1,0 +1,18 @@
+.footer {
+	text-align: center;
+	height: 70px;
+}
+
+#memo-title {
+	font-weight: bold;
+}
+#memo-title-display {
+	font-weight: bold;
+}
+
+#time-new-memo {
+	font-style: oblique;
+}
+#time-display-memo {
+	font-style: oblique;
+}

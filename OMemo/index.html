@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width"/>
+
+	<script src="./lib/jquery.js"></script>
+	<script src="./lib/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet"  href="./lib/jquery.mobile-1.4.5.min.css">
+
+	<title>OMemo</title>
+    <script src="./js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body>
+    <!-- Start of Main Page -->
+    <div data-role="page" id="main-page" >
+        <div data-role="header" class="header" data-position="fixed">
+            <h1>OMemo</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">
+            <ul id="memo-list" data-role="listview" data-filter="true" data-filter-placeholder="Search" data-inset="true" data-divider-theme="a" data-icon="false" data-split-icon="delete"></ul>
+        </div><!-- /content -->
+
+        <div class="footer">
+            <button id="btnNewMemo" class="ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-plus" >New Memo</button>
+            <div style="height:%30"></div>
+        </div><!-- /footer -->
+
+    </div><!-- /Main Page -->
+
+
+    <!-- Start of New-memo Page -->
+    <div data-role="page" id="new-memo-page" >
+        <div data-role="header" class="header" data-position="fixed">
+            <h1>New Memo</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">
+            <textarea class="textarea" id="memo-title" placeholder="Title"></textarea>
+            <textarea class="textarea" id="memo-content" placeholder="Content"></textarea>
+            <p id="time-new-memo"></p>
+        </div><!-- /content -->
+
+        <div class="footer" >
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <button id="btnCancel" class="ui-btn ui-btn-inline ui-corner-all">Cancel</button>
+                </div>
+                <div class="ui-block-b">
+                    <button id="btnSave" class="ui-btn ui-btn-inline ui-corner-all">Save</button>
+                </div>
+            </div>
+            <div style="height:%30"></div>
+        </div><!-- /footer -->     
+
+    </div><!-- /New-memo Page -->
+
+    <!-- Start of Display-memo Page -->
+    <div data-role="page" id="display-memo-page" >
+        <div data-role="header" class="header" data-position="fixed">
+            <h1>OMemo</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+            <textarea class="textarea" id="memo-title-display"></textarea>
+            <textarea class="textarea" id="memo-content-display"></textarea>
+            <p id="time-display-memo"></p>
+        </div><!-- /content -->
+        
+        <div class="footer">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <button id="btnDelete" class="ui-btn ui-btn-inline ui-corner-all">Delete</button>
+                </div>
+                <div class="ui-block-b">
+                    <button id="btnSaveDisplay" class="ui-btn ui-btn-inline ui-corner-all">Save</button>
+                </div>
+            </div>
+            <div style="height:%30"></div>
+        </div><!-- /footer -->      
+
+    </div><!-- /Display-memo Page -->
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://Orange/OMemo" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="NelkE3XXxn.OMemo" package="NelkE3XXxn" required_version="2.2"/>
+    <author href="https://github.com/ColdOrange" email="904412343@qq.com">Orange
+    	Orange </author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>OMemo</name>
+    <tizen:profile name="mobile"/>
+    <tizen:setting context-menu="disable"/>
+</widget>
